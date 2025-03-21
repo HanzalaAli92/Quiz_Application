@@ -109,7 +109,7 @@ question = st.session_state.current_question
 st.subheader(question["question"])
 
 # Create radio buttons for the options
-selected_option = st.selectbox("Choose your answer", question["options"], key="answer")
+selected_option = st.radio("Choose your answer", question["options"], key="answer")
 
 # Submit button the check the answer
 if st.button("Submit Answer"):
