@@ -53,6 +53,7 @@ if st.button("🚀 Submit Answer"):
     if selected_option == question["answer"]:
         st.session_state.score += 1
         st.success("✅ Correct! 🎉")
+        st.balloons()
     else:
         st.error(f"❌ Incorrect! The correct answer is **{question['answer']}**")
     
